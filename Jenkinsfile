@@ -41,7 +41,7 @@ def delete_Worspacedir() {
 def Checkout_Project(run) {
 	stage('Checkout_Project') {
 		if(run) {
-			checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/kaushiksen1984/demoinventory.git']]])
+			checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/kaushiksen1984/countryDetails.git']]])
 		}
 	}
 }
